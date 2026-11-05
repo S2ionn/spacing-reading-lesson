@@ -128,6 +128,12 @@ u { text-decoration-color: var(--pinkd); text-decoration-thickness: 2px; }
 .vv { color: #e5483b !important; font-weight: bold; }
 .read.acc li { padding: 6mm 0 2mm; }
 .choice { display: flex; flex-wrap: wrap; column-gap: 12mm; }
+.live2 { display: flex; align-items: center; margin: 1mm 0 0 2mm; }
+.live2 b { font-weight: normal; font-size: 13pt; color: var(--skyd); width: 7mm; }
+.live2 .nm { font-size: 13pt; color: var(--ink); margin-right: 2mm; }
+.live2 .ln { display: inline-block; width: 30mm; border-bottom: 1.5px solid #d8c48a; height: 8mm; margin-right: 6mm; }
+.live2 .choice { margin-left: 0; column-gap: 6mm; flex-wrap: nowrap; }
+.live2 .choice li { font-size: 14pt; padding: 2.5mm 0; white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -150,8 +156,9 @@ u { text-decoration-color: var(--pinkd); text-decoration-thickness: 2px; }
 </section><section class="page">
   <div class="top"><h1><svg class="mic" viewBox="0 0 40 60" aria-hidden="true"><rect x="12" y="2" width="16" height="28" rx="8" fill="#f7d6dc" stroke="#d9788a" stroke-width="2.5"/><path d="M14 10h12M14 16h12M14 22h12" stroke="#d9788a" stroke-width="2"/><path d="M6 24q0 16 14 16q14 0 14-16" fill="none" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/><path d="M20 40v12M12 54h16" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/></svg>달반 방송부 생방송</h1><div class="type"><b>방송 중</b>원고 A</div></div>
     <h2>달반 방송부 생방송</h2>
-  <p class="how">친구 방송을 듣고, 뜻이 잘 전해졌는지 ○표 하세요.<br>그리고 ‘어디에서 쉬니까 잘 들렸나요?’에 말로 대답해요.</p>
-  <ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul>
+  <p class="how">방송한 친구 이름을 쓰고, 뜻이 잘 전해졌는지 ○표 하세요.<br>그리고 ‘어디에서 쉬니까 잘 들렸나요?’에 말로 대답해요.</p>
+  <div class="live2"><b>①</b><span class="nm">방송한 친구</span><span class="ln"></span><ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul></div>
+  <div class="live2"><b>②</b><span class="nm">방송한 친구</span><span class="ln"></span><ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul></div>
   <h2>방송 사고를 막아라</h2>
   <p class="how">선생님의 안내 방송을 듣고, 어색하면 “다시!”, 자연스러우면 “방송 성공!” 하고 말해요.<br>그리고 알맞게 쉬어 읽을 곳에 <span class="vv">∨</span>를 해요.</p>
   <ol class="read acc">
@@ -184,8 +191,9 @@ u { text-decoration-color: var(--pinkd); text-decoration-thickness: 2px; }
 </section><section class="page">
   <div class="top"><h1><svg class="mic" viewBox="0 0 40 60" aria-hidden="true"><rect x="12" y="2" width="16" height="28" rx="8" fill="#f7d6dc" stroke="#d9788a" stroke-width="2.5"/><path d="M14 10h12M14 16h12M14 22h12" stroke="#d9788a" stroke-width="2"/><path d="M6 24q0 16 14 16q14 0 14-16" fill="none" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/><path d="M20 40v12M12 54h16" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/></svg>달반 방송부 생방송</h1><div class="type"><b>방송 중</b>원고 B</div></div>
     <h2>달반 방송부 생방송</h2>
-  <p class="how">친구 방송을 듣고, 뜻이 잘 전해졌는지 ○표 하세요.<br>그리고 ‘어디에서 쉬니까 잘 들렸나요?’에 말로 대답해요.</p>
-  <ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul>
+  <p class="how">방송한 친구 이름을 쓰고, 뜻이 잘 전해졌는지 ○표 하세요.<br>그리고 ‘어디에서 쉬니까 잘 들렸나요?’에 말로 대답해요.</p>
+  <div class="live2"><b>①</b><span class="nm">방송한 친구</span><span class="ln"></span><ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul></div>
+  <div class="live2"><b>②</b><span class="nm">방송한 친구</span><span class="ln"></span><ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul></div>
   <h2>방송 사고를 막아라</h2>
   <p class="how">선생님의 안내 방송을 듣고, 어색하면 “다시!”, 자연스러우면 “방송 성공!” 하고 말해요.<br>그리고 알맞게 쉬어 읽을 곳에 <span class="vv">∨</span>를 해요.</p>
   <ol class="read acc">
