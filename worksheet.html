@@ -110,6 +110,21 @@ h2 i { font-style: normal; font-size: 12.5pt; background: #fff; color: var(--pin
 .qhint { font-size: 13pt; margin: 0 0 1.5mm 2mm; color: var(--ink); }
 .qhint b { font-weight: normal; font-size: 11.5pt; background: var(--lemon); padding: 0.5mm 2.5mm 1mm; border-radius: 1.5mm; margin-right: 2mm; }
 u { text-decoration-color: var(--pinkd); text-decoration-thickness: 2px; }
+
+/* 피드백 반영 */
+.read li { word-spacing: normal !important; line-height: 2.25 !important; padding: 2.5mm 0 1mm !important; }
+.read li b { padding-top: 3.5mm !important; }
+.pick2 { list-style: none; display: flex; gap: 14mm; margin: 4mm 0 2mm 6mm; }
+.pick2 li { font-size: 17pt; display: flex; align-items: center; gap: 3mm; }
+.pick2 li::before { content: ""; width: 8mm; height: 8mm; border: 2px solid #444; border-radius: 1.5mm; }
+.qhint { font-size: 12.5pt; margin: 1mm 0 1mm 2mm; color: #444; }
+.choice li::before { border-color: #444 !important; }
+.read li { border-bottom-color: #aab !important; }
+.starlist { list-style: none; margin: 2mm 0 0 4mm; }
+.starlist li { font-size: 14.5pt; display: flex; align-items: center; gap: 3mm; padding: 1mm 0; }
+.starlist span { font-size: 24pt; color: #d9a520; line-height: 1; }
+.how, .q { color: #222 !important; }
+.read li { font-size: 18pt !important; line-height: 2.5 !important; padding: 3mm 0 1.5mm !important; }
 </style>
 </head>
 <body>
@@ -117,15 +132,11 @@ u { text-decoration-color: var(--pinkd); text-decoration-thickness: 2px; }
   <div class="top"><h1><svg class="mic" viewBox="0 0 40 60" aria-hidden="true"><rect x="12" y="2" width="16" height="28" rx="8" fill="#f7d6dc" stroke="#d9788a" stroke-width="2.5"/><path d="M14 10h12M14 16h12M14 22h12" stroke="#d9788a" stroke-width="2"/><path d="M6 24q0 16 14 16q14 0 14-16" fill="none" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/><path d="M20 40v12M12 54h16" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/></svg>문장을 자연스럽게 띄어 읽기</h1><div class="type"><b>방송 중</b>원고 A</div></div>
   <table class="form"><tr><th>방송부</th><td>1학년 달반 방송부</td><th>방송 날짜</th><td>11월 6일</td></tr><tr><th>이름</th><td></td><th>짝 이름</th><td></td></tr></table>
   <h2>어디서 쉬었을까?</h2>
-  <p class="how">선생님이 읽어 줄 때, 쉬는 곳에서 손가락으로 허공에 ∨를 그려요.<br>두 방송을 듣고, 더 알아듣기 쉬운 쪽의 □에 ○를 해요.</p>
-  <ul class="pick">
-    <li><span class="lab">첫 번째</span>오늘 점심에는∨급식실에서∨나물 반찬을∨남기지 말고∨골고루 먹어 주세요.</li>
-    <li><span class="lab">두 번째</span>오늘 점심에는∨급식실에서∨나∨물 반찬을∨남기지 말고∨골고루 먹어 주세요.</li>
-  </ul>
-  <p class="tip">낱말 중간을 끊으면 알아듣기 어려워요.</p>
+  <p class="how">선생님의 두 방송을 잘 들어 보세요. 쉬는 곳에서 손가락으로 허공에 ∨를 그려요.<br>더 알아듣기 쉬운 방송에 ○표 하세요.</p>
+  <ul class="pick2"><li>첫 번째 방송</li><li>두 번째 방송</li></ul>
   <h2>오늘의 방송 원고 A: 공룡의 급식실 대소동</h2>
   <p class="how">문장의 뜻을 생각하며 쉬어 읽을 곳에 ∨를 해요. 그리고 짝과 번갈아 읽어요.</p>
-  <p class="qhint"><b>누가?</b><b>언제?</b><b>어디로?</b><b>어떻게 했나요?</b>묻고 답한 말 덩어리 뒤에 ∨를 해요.</p>
+  <p class="qhint">‘누가?’, ‘무엇을?’, ‘어디에서?’, ‘어떻게?’ 등을 물으며 뜻이 이어지는 말을 찾아봐요.</p>
   <p class="cue">♪ 딩동댕동 (방송 시작)</p>
   <ol class="read">
     <li class="ex"><b>①</b><span><em>예시</em>안녕하세요,∨1학년 달반 방송부입니다.</span></li>
@@ -136,29 +147,25 @@ u { text-decoration-color: var(--pinkd); text-decoration-thickness: 2px; }
 </section><section class="page">
   <div class="top"><h1><svg class="mic" viewBox="0 0 40 60" aria-hidden="true"><rect x="12" y="2" width="16" height="28" rx="8" fill="#f7d6dc" stroke="#d9788a" stroke-width="2.5"/><path d="M14 10h12M14 16h12M14 22h12" stroke="#d9788a" stroke-width="2"/><path d="M6 24q0 16 14 16q14 0 14-16" fill="none" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/><path d="M20 40v12M12 54h16" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/></svg>달반 방송부 생방송</h1><div class="type"><b>방송 중</b>원고 A</div></div>
     <h2>달반 방송부 생방송</h2>
-  <p class="how">친구 방송을 듣고 뜻이 잘 전해졌는지, 맞는 것의 □에 ○를 해요.</p>
+  <p class="how">친구 방송을 듣고, 뜻이 잘 전해졌는지 ○표 하세요.<br>그리고 ‘어디에서 쉬니까 잘 들렸나요?’에 말로 대답해요.</p>
   <ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul>
   <h2>오늘의 방송 마무리</h2>
-  <p class="q">왜 띄어 읽어야 할까요? 맞는 것의 □에 ○를 해요.</p>
+  <p class="q">왜 띄어 읽어야 할까요? 맞는 답에 ○표 하세요.</p>
   <ul class="choice"><li>듣는 사람이 뜻을 잘 알 수 있어요.</li><li>빨리 읽을 수 있어요.</li></ul>
-  <p class="q" style="margin-top:5mm">어떻게 읽으면 자연스러울까요? 맞는 것의 □에 ○를 해요.</p>
+  <p class="q" style="margin-top:5mm">어떻게 읽으면 자연스러울까요? 맞는 답에 ○표 하세요.</p>
   <ul class="choice"><li>글자마다 끊어 읽어요.</li><li>뜻이 이어지는 말을 생각하며 쉬어 읽어요.</li></ul>
-  <p class="q" style="margin-top:5mm">나는 뜻이 잘 전해지게 읽었나요? 잘한 만큼 별을 색칠해요.</p>
-  <p class="stars">☆☆☆</p>
+  <p class="q" style="margin-top:5mm">나는 어떻게 읽었나요? 해당하는 별을 색칠해요.</p>
+  <ul class="starlist"><li><span>☆</span>원고를 읽으려고 노력했어요.</li><li><span>☆</span>뜻을 생각하며 쉬어 읽었어요.</li><li><span>☆</span>듣는 사람이 알아듣기 쉽게 읽었어요.</li></ul>
   <p class="foot">2쪽</p>
 </section><section class="page">
   <div class="top"><h1><svg class="mic" viewBox="0 0 40 60" aria-hidden="true"><rect x="12" y="2" width="16" height="28" rx="8" fill="#f7d6dc" stroke="#d9788a" stroke-width="2.5"/><path d="M14 10h12M14 16h12M14 22h12" stroke="#d9788a" stroke-width="2"/><path d="M6 24q0 16 14 16q14 0 14-16" fill="none" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/><path d="M20 40v12M12 54h16" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/></svg>문장을 자연스럽게 띄어 읽기</h1><div class="type"><b>방송 중</b>원고 B</div></div>
   <table class="form"><tr><th>방송부</th><td>1학년 달반 방송부</td><th>방송 날짜</th><td>11월 6일</td></tr><tr><th>이름</th><td></td><th>짝 이름</th><td></td></tr></table>
   <h2>어디서 쉬었을까?</h2>
-  <p class="how">선생님이 읽어 줄 때, 쉬는 곳에서 손가락으로 허공에 ∨를 그려요.<br>두 방송을 듣고, 더 알아듣기 쉬운 쪽의 □에 ○를 해요.</p>
-  <ul class="pick">
-    <li><span class="lab">첫 번째</span>오늘 점심에는∨급식실에서∨나물 반찬을∨남기지 말고∨골고루 먹어 주세요.</li>
-    <li><span class="lab">두 번째</span>오늘 점심에는∨급식실에서∨나∨물 반찬을∨남기지 말고∨골고루 먹어 주세요.</li>
-  </ul>
-  <p class="tip">낱말 중간을 끊으면 알아듣기 어려워요.</p>
+  <p class="how">선생님의 두 방송을 잘 들어 보세요. 쉬는 곳에서 손가락으로 허공에 ∨를 그려요.<br>더 알아듣기 쉬운 방송에 ○표 하세요.</p>
+  <ul class="pick2"><li>첫 번째 방송</li><li>두 번째 방송</li></ul>
   <h2>오늘의 방송 원고 B: 마법 우산과 양말 비</h2>
   <p class="how">문장의 뜻을 생각하며 쉬어 읽을 곳에 ∨를 해요. 그리고 짝과 번갈아 읽어요.</p>
-  <p class="qhint"><b>누가?</b><b>언제?</b><b>어디로?</b><b>어떻게 했나요?</b>묻고 답한 말 덩어리 뒤에 ∨를 해요.</p>
+  <p class="qhint">‘누가?’, ‘무엇을?’, ‘어디에서?’, ‘어떻게?’ 등을 물으며 뜻이 이어지는 말을 찾아봐요.</p>
   <p class="cue">♪ 딩동댕동 (방송 시작)</p>
   <ol class="read">
     <li class="ex"><b>①</b><span><em>예시</em>안녕하세요,∨1학년 달반 방송부입니다.</span></li>
@@ -169,15 +176,15 @@ u { text-decoration-color: var(--pinkd); text-decoration-thickness: 2px; }
 </section><section class="page">
   <div class="top"><h1><svg class="mic" viewBox="0 0 40 60" aria-hidden="true"><rect x="12" y="2" width="16" height="28" rx="8" fill="#f7d6dc" stroke="#d9788a" stroke-width="2.5"/><path d="M14 10h12M14 16h12M14 22h12" stroke="#d9788a" stroke-width="2"/><path d="M6 24q0 16 14 16q14 0 14-16" fill="none" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/><path d="M20 40v12M12 54h16" stroke="#d9788a" stroke-width="2.5" stroke-linecap="round"/></svg>달반 방송부 생방송</h1><div class="type"><b>방송 중</b>원고 B</div></div>
     <h2>달반 방송부 생방송</h2>
-  <p class="how">친구 방송을 듣고 뜻이 잘 전해졌는지, 맞는 것의 □에 ○를 해요.</p>
+  <p class="how">친구 방송을 듣고, 뜻이 잘 전해졌는지 ○표 하세요.<br>그리고 ‘어디에서 쉬니까 잘 들렸나요?’에 말로 대답해요.</p>
   <ul class="choice"><li>알아듣기 쉬웠어요.</li><li>알아듣기 어려웠어요.</li></ul>
   <h2>오늘의 방송 마무리</h2>
-  <p class="q">왜 띄어 읽어야 할까요? 맞는 것의 □에 ○를 해요.</p>
+  <p class="q">왜 띄어 읽어야 할까요? 맞는 답에 ○표 하세요.</p>
   <ul class="choice"><li>듣는 사람이 뜻을 잘 알 수 있어요.</li><li>빨리 읽을 수 있어요.</li></ul>
-  <p class="q" style="margin-top:5mm">어떻게 읽으면 자연스러울까요? 맞는 것의 □에 ○를 해요.</p>
+  <p class="q" style="margin-top:5mm">어떻게 읽으면 자연스러울까요? 맞는 답에 ○표 하세요.</p>
   <ul class="choice"><li>글자마다 끊어 읽어요.</li><li>뜻이 이어지는 말을 생각하며 쉬어 읽어요.</li></ul>
-  <p class="q" style="margin-top:5mm">나는 뜻이 잘 전해지게 읽었나요? 잘한 만큼 별을 색칠해요.</p>
-  <p class="stars">☆☆☆</p>
+  <p class="q" style="margin-top:5mm">나는 어떻게 읽었나요? 해당하는 별을 색칠해요.</p>
+  <ul class="starlist"><li><span>☆</span>원고를 읽으려고 노력했어요.</li><li><span>☆</span>뜻을 생각하며 쉬어 읽었어요.</li><li><span>☆</span>듣는 사람이 알아듣기 쉽게 읽었어요.</li></ul>
   <p class="foot">2쪽</p>
 </section>
 </body>
